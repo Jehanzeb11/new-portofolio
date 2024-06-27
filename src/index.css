@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html{
+  background: #030712;
+}
+
 .swipeToLeft {
   animation: animatSwipeLeft 0.5s ease-in;
 }
@@ -31,21 +43,100 @@
   }
 }
 
+
 .card {
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 100% !important;
+  cursor: pointer;
 }
+
 .card:hover {
-  transform: scale(1.05);
+  box-shadow: rgba(70, 70, 70, 0.6) 0px 2px 4px 0px, rgba(70, 70, 70, 0.6) 0px 2px 16px 0px;
 }
-.card-image {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+
+.card:hover>.card-content>.serviceNum{
+  opacity: 0.8 !important;
+  transition: all 0.3s ease-in-out;
 }
-.card-title {
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+
+.card:hover::before,
+.card:hover::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover::before {
+  top: 0px;
+  left: 0px;
+  border-top: 5px solid #21E786;
+  border-left: 5px solid #21E786;
+}
+
+.card:hover::after {
+  bottom: 0px;
+  right: 0px;
+  border-bottom: 5px solid #21E786;
+  border-right: 5px solid #21E786;
+}
+
+
+/* styles.css */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+  margin: 0;
+}
+
+.portfolio-card {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 100% !important;
+  cursor: pointer;
+  overflow: hidden;
+  
+}
+
+.portfolio-card:hover>.portfolio-card-content>div>.porfolio-image{
+  transform: scale(1.1) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-card:hover::before,
+.portfolio-card:hover::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio-card:hover::before {
+  top: 0px;
+  left: 0px;
+  border-top: 5px solid #21E786;
+  border-left: 5px solid #21E786;
+}
+
+.portfolio-card:hover::after {
+  bottom: 0px;
+  right: 0px;
+  border-bottom: 5px solid #21E786;
+  border-right: 5px solid #21E786;
+}
+
+.portfolio-card:hover {
+  box-shadow: rgba(70, 70, 70, 0.6) 0px 2px 4px 0px, rgba(70, 70, 70, 0.6) 0px 2px 16px 0px;
+}
+
+
+.slick-slide {
+  margin: 0 20px;
 }

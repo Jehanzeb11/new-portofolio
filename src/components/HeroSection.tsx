@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   return (
     <div className='relative text-gray-400 z-10 text-center md:h-[65vh] h-[60vh] px-2 w-full flex justify-center items-center flex-col'>
-      <div className='absolute top-0 left-0 w-full h-full z-[10] opacity-15'>
+      <div className='absolute top-0 left-0 w-full h-full z-[10] opacity-30'>
         <video className=' w-full h-[100%] object-cover' autoPlay muted loop>
           <source
             src='https://www.famewheels.net/home-bg-video.mp4'
@@ -20,11 +20,11 @@ const HeroSection = () => {
 
       <div className='max-w-[1200px] z-10'>
         <h1 className='md:text-5xl font-semibold text-[1.7rem] text-gray-200'>
-          Hi, I am <span className='text-primary'>Jehanzeb Siddiqui</span>
+          Hi, I am <span className='text-primary'> Jehanzeb Siddiqui</span>
         </h1>
         <p className='font-medium md:text-3xl text-lg mt-4'>
           I am a{" "}
-          <span className='text-primary'> Full Stack Web Developer </span>{" "}
+          <span className='text-primary'> MERN Stack Web Developer </span>{" "}
           transforming ideas into reality and helping people build their dream
           with code and technologies I use.{" "}
         </p>

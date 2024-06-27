@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className='sticky top-0 flex justify-center items-center p-4 w-full z-50'>
+      <header className='sticky top-0 flex justify-center items-center p-4 w-full z-50 bg-gray-950'>
         <nav className='container flex gap-4 justify-between items-center'>
           <h4 className='text-primary text-2xl font-bold flex gap-2'>
             JEHANZEB <FaComputer size={35} color='white' />{" "}
@@ -62,7 +62,7 @@ const Navbar = () => {
 
       {show && (
         <div className=''>
-          <div className='fixed z-40 bg-gray-900 top-0 left-0 w-full h-screen opacity-35'></div>
+          <div className='fixed z-40 bg-gray-950 top-0 left-0 w-full h-screen opacity-35'></div>
           <div
             className={`fixed z-50 right-0 top-0 ${
               show ? "swipeToLeft" : "swipeToRight"
