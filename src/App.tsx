@@ -5,10 +5,11 @@ import Navbar from "./components/Navbar";
 import Portofolio from "./components/Portofolio";
 import ScrollToTop from "./components/ScrollToTop";
 import Services from "./components/Services";
+import Skills from "./components/Skills";
 
 function App() {
   return (
-    <main className='bg-gray-950'>
+    <main className='bg-white-950'>
       <Navbar />
       <div className='flex items-center justify-center flex-col'>
         <HeroSection />
@@ -17,9 +18,10 @@ function App() {
 
         <Portofolio />
       </div>
-      
-        <About />
+
+      <About />
       <ScrollToTop />
+      <Skills />
     </main>
   );
 }
