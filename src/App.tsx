@@ -6,6 +6,9 @@ import Portofolio from "./components/Portofolio";
 import ScrollToTop from "./components/ScrollToTop";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
+import CursorMove from "./components/CursorMove"
+import Contact from "./components/Contact";
+
 
 function App() {
   return (
@@ -20,8 +23,10 @@ function App() {
       </div>
 
       <About />
-      <ScrollToTop />
       <Skills />
+      <Contact />
+      <ScrollToTop />
+      <CursorMove />
     </main>
   );
 }

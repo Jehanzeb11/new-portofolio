@@ -147,3 +147,139 @@ html{
   }
   
 }
+
+
+
+
+/* cursor move  */
+
+@media (hover: hover) and (pointer: fine) {
+  #cursor {
+    z-index: 19999999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  #cursor .cursor--inner {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    /* transform: translate3d(-50%,-50%); */
+    background-color: #21e787c7;
+    box-shadow: #21e787c7 0px 0px 6px 6px;
+  }
+}
+
+
+/* progress  */
+
+
+.html-progress {
+  width: 90%;
+  animation: htmlAnimation 3s ease-in-out;
+}
+
+@keyframes htmlAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.css-progress {
+  width: 80%;
+  animation: cssAnimation 2.5s ease-in-out;
+
+}
+
+@keyframes cssAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.js-progress {
+  width: 75%;
+  animation: jsAnimation 2.25s ease-in-out;
+
+}
+
+@keyframes jsAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.react-progress {
+  width: 85%;
+  animation: reactAnimation 2.5s ease-in-out;
+
+}
+
+.ts-progress {
+  width: 85%;
+  animation: reactAnimation 2.5s ease-in-out;
+}
+
+@keyframes reactAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+.node-progress {
+  width: 55%;
+  animation: nodeAnimation 2s ease-in-out;
+
+}
+
+@keyframes nodeAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+.express-progress {
+  width: 65%;
+  animation: expressAnimation 2.25s ease-in-out;
+}
+
+@keyframes expressAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+.mongo-progress {
+  width: 65%;
+  animation: mongoAnimation 2.25s ease-in-out;
+}
+
+@keyframes mongoAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
